@@ -30,9 +30,9 @@ const faqItems = [
 ];
 
 export default function FAQ() {
-  const [openItem, setOpenItem] = useState(null);
+  const [openItem, setOpenItem] = useState<number | null>(null);
   
-  const toggleItem = (index) => {
+  const toggleItem = (index: number) => {
     if (openItem === index) {
       setOpenItem(null);
     } else {
